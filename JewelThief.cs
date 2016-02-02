@@ -10,12 +10,11 @@ namespace VirtualTester
     {
         private Jewels _stolenJewels = null;
 
-        public new void ReturnContents(Jewels safeContents, Owner owner)
+        override
+        public void ReturnContents(Jewels safeContents, Owner owner)
         {
             _stolenJewels = safeContents;
             Console.WriteLine("Im stealing the contents! " + _stolenJewels.Sparkle());
         }
-
-
     }
 }

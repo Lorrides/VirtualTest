@@ -13,11 +13,11 @@ namespace VirtualTester
             Owner owner = new Owner();
             Safe safe = new Safe();
             JewelThief jewelThief = new JewelThief();
+            Locksmith lockSmith = new Locksmith();
             jewelThief.OpenSafe(safe, owner);
+            lockSmith.OpenSafe(safe, owner);
 
             Console.ReadKey();
-
-
         }
     }
 }

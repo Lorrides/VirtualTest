@@ -22,7 +22,7 @@ namespace VirtualTester
             writtenDownCombination = combination;
         }
 
-        public void ReturnContents(Jewels safeContents, Owner owner)
+        public virtual void ReturnContents(Jewels safeContents, Owner owner)
         {
             owner.ReciveContents(safeContents);
         }
